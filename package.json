@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node  --watch src/index.js",
+    "test": "npx nodemon src/index.js",
     "start": "npx pm2 start src/index.js --name website --watch",
     "stop": "npx pm2 stop website",
     "ls": "npx pm2 list"
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/CalebKendra/caleb-website#readme",
   "dependencies": {
     "express": "^4.21.2",
+    "nodemon": "^3.1.9",
     "pm2": "^6.0.5"
   }
 }
