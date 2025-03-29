@@ -22,5 +22,27 @@ header {
     left: 0;
     width: 100%;
     justify-content: space-around;
+    text-transform: uppercase;
     border-bottom: 1px solid var(--black);
+}
+
+nav {
+    align-content: center;
+}
+
+/* Classes */
+
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 25%;
+    gap: 2px;
+}
+
+.nav-bar a {
+    width: 30%;
+    color: var(--black);
+    text-align: center;
+    text-decoration: none;
 }
