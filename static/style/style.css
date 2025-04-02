@@ -36,16 +36,23 @@ nav {
 
 /* Classes */
 
+.header-text {
+    color: var(--black);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    align-self: center;
+}
+
 .nav-bar {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 25%;
-    gap: 2px;
+    width: 22.5%;
 }
 
 .nav-bar a {
-    width: 30%;
+    width: fit-content;
     color: var(--black);
     text-align: center;
     text-decoration: none;
