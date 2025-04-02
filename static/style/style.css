@@ -36,6 +36,13 @@ nav {
     align-content: center;
 }
 
+code {
+    background-color: #cbcfd1;
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: normal;
+}
+
 /* Classes */
 
 /* Header */
@@ -113,7 +120,7 @@ nav {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    height: 85%;
+    height: 90%;
     border-radius: 30px;
 }
 
