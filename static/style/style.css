@@ -5,10 +5,13 @@
 :root {
     --font: "Raleway", sans-serif;
     --black: #171717;
-    --green: #228B22;
 }
 
 /* Elements */
+
+html {
+    font-size: 16px;
+}
 
 body {
     background-color: #f0f0f0;
@@ -23,6 +26,7 @@ header {
     width: 100%;
     justify-content: space-around;
     text-transform: uppercase;
+    font-size: 1.2rem;
     border-bottom: 1px solid var(--black);
 }
 
