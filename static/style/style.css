@@ -24,7 +24,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-transform: uppercase;
     font-size: 1.2rem;
     border-bottom: 1px solid var(--black);
@@ -36,6 +36,8 @@ nav {
 
 /* Classes */
 
+/* Header */
+
 .header-text {
     color: var(--black);
     text-align: center;
@@ -44,16 +46,34 @@ nav {
     align-self: center;
 }
 
-.nav-bar {
+.header-bar {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 22.5%;
 }
 
-.nav-bar a {
+.header-bar a {
     width: fit-content;
     color: var(--black);
     text-align: center;
     text-decoration: none;
+}
+
+/* Home */
+
+.home-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    height: 95%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home-img {
+    position: relative;
+    border-radius: 30px;
 }
