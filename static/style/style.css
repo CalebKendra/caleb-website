@@ -4,6 +4,7 @@
 
 :root {
     --font: "Raleway", sans-serif;
+    --weight: 250;
     --black: #171717;
 }
 
@@ -16,6 +17,7 @@ html {
 body {
     background-color: #f0f0f0;
     font-family: var(--font);
+    font-weight: var(--weight);
 }
 
 header {
@@ -27,7 +29,6 @@ header {
     justify-content: space-evenly;
     text-transform: uppercase;
     font-size: 1.2rem;
-    font-weight: 250;
     border-bottom: 1px solid var(--black);
 }
 
@@ -71,7 +72,7 @@ nav {
     width: 35%;
     height: 15%;
     font-size: 2.5rem;
-    font-weight: 250;
+    font-weight: var(--weight);
     letter-spacing: 1.5px;
     text-align: center;
     line-height: 1.5;
@@ -93,6 +94,39 @@ nav {
     transform: translateY(-50%);
     border-radius: 30px;
 }
+
+/* About */
+
+.about-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 80%;
+}
+
+.about-img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 85%;
+    border-radius: 30px;
+}
+
+.about-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Media Queries */
 
 @media(max-width: 1500px) {
     .home-container {
