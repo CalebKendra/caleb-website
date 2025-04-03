@@ -113,12 +113,12 @@ code {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    gap: 7.5%;
+    gap: 5%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 80%;
-    width: 75%;
+    width: 85%;
 }
 
 .info-img {
@@ -166,7 +166,7 @@ code {
     }
 }
 
-@media(max-width: 650px) {
+@media(max-width: 680px) {
     .info-container {
         top: 57.5%;
     }
