@@ -227,19 +227,19 @@ code {
 @media(max-width: 1150px) {
     .home-text {
         font-size: 1.8rem;
-        top: 100px;
+        top: 150px;
         width: 80%;
     }
 
     .home-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 50vw);
+        grid-template-rows: repeat(3, 45vw);
         grid-template-areas:
         "bridge hat"
         "catch wind"
         "catch wind";
-        top: 300px;
+        top: 350px;
         width: 70%;
     }
 
