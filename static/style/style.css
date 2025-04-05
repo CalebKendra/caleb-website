@@ -148,7 +148,10 @@ code {
 .info-email {
     position: relative;
     font-size: 2.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: var(--green);
+    text-decoration: none;
     animation: bobbing 2s ease-in-out infinite;
 }
 
@@ -261,6 +264,7 @@ code {
 
 @media(max-width: 1050px) {
     .info-container {
+        justify-content: space-evenly !important;
         flex-direction: column;
         width: 95%;
         gap: 0;
@@ -276,6 +280,10 @@ code {
 
     .info-text {
         text-align: center;
+    }
+
+    .info-email {
+        font-size: 4vw;
     }
 }
 
