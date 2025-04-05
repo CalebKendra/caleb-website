@@ -155,6 +155,17 @@ code {
     animation: bobbing 2s ease-in-out infinite;
 }
 
+/* Experiences */
+
+.experiences-container {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* Dropdown Menu */
 
 .dropdown-button {
@@ -199,7 +210,7 @@ code {
     position: fixed;
     flex-direction: column;
     width: 100%;
-    height: 50%;
+    height: 55%;
     top: 0;
     left: 0;
     padding-top: 80px;
@@ -234,7 +245,7 @@ code {
     }
 }
 
-@media(max-width: 1150px) {
+@media(max-width: 1250px) {
     .home-text {
         font-size: 1.8rem;
         top: 150px;
@@ -267,6 +278,7 @@ code {
         justify-content: space-evenly !important;
         flex-direction: column;
         width: 95%;
+        top: 55%;
         gap: 0;
     }
 
@@ -274,7 +286,7 @@ code {
         height: auto;
         width: 60%;
         left: 50%;
-        top: 1%;
+        top: 0;
         transform: translateX(-50%);
     }
 
@@ -294,6 +306,13 @@ code {
 
     .dropdown-button {
         display: flex;
+    }
+}
+
+@media(max-width: 450px) {
+    .dropdown-content {
+        height: 65%;
+        line-height: 0;
     }
 }
 
