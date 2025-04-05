@@ -149,9 +149,7 @@ code {
     position: relative;
     font-size: 2.2rem;
     color: var(--green);
-    animation: bobbing 1.25s ease-in-out infinite;
-    animation-play-state: paused;
-    animation-fill-mode: forward;
+    animation: bobbing 2s ease-in-out infinite;
 }
 
 /* Dropdown Menu */
@@ -298,17 +296,13 @@ code {
     cursor: pointer;
 }
 
-.info-email:hover {
-    animation-play-state: running;
-}
-
 /* Animation */
 
 @keyframes bobbing {
     0%, 100% {
-        transform: rotate(-10deg);
+        transform: rotate(-2.5deg);
     }
     50% {
-        transform: rotate(10deg);
+        transform: rotate(2.5deg);
     }
 }
