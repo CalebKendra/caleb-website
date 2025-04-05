@@ -15,3 +15,12 @@ function toggleHamburger(e) {
 }
 
 dropdownToggle.addEventListener('click', toggleHamburger);
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 680 && dropdownContent.style.display == "flex") {
+    dropdownContent.setAttribute("style", "display: none;")
+    dropdownToggle.setAttribute("style", "position: absolute;")
+
+    bars.forEach(bar => bar.classList.toggle('dropdown-x'));
+  }
+});

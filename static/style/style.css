@@ -192,7 +192,7 @@ code {
     height: 50%;
     top: 0;
     left: 0;
-    padding-top: 12.5%;
+    padding-top: 80px;
     background-color: var(--green);
     z-index: 1;
 }
@@ -224,20 +224,31 @@ code {
     }
 }
 
-@media(max-width: 1225px) {
+@media(max-width: 1150px) {
+    .home-text {
+        font-size: 1.8rem;
+        top: 100px;
+        width: 80%;
+    }
+
     .home-container {
         display: grid;
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(2, 50%);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 50vw);
         grid-template-areas:
         "bridge hat"
+        "catch wind"
         "catch wind";
-        top: 50%;
+        top: 300px;
+        width: 70%;
     }
 
     .home-img {
-        top: 0;
-        left: 0;
+        top: 50% !important;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: auto !important;
+        width: 90%;
     }
 }
 
