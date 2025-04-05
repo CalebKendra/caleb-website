@@ -84,11 +84,12 @@ code {
 
 .home-text {
     position: absolute;
-    top: 15%;
+    top: 17.5%;
     left: 50%;
     transform: translateX(-50%);
-    width: 35%;
-    height: 15%;
+    width: 55%;
+    height: 20%;
+    margin: 0;
     font-size: 2.5rem;
     font-weight: var(--weight);
     letter-spacing: 1.5px;
@@ -220,6 +221,23 @@ code {
 @media(max-width: 1500px) {
     .home-container {
         width: 100%;
+    }
+}
+
+@media(max-width: 1225px) {
+    .home-container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas:
+        "bridge hat"
+        "catch wind";
+        top: 50%;
+    }
+
+    .home-img {
+        top: 0;
+        left: 0;
     }
 }
 
