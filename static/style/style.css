@@ -157,13 +157,48 @@ code {
 
 /* Experiences */
 
-.experiences-container {
-    position: relative;
+#experience-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 80%;
-    height: 100%;
+    height: fit-content;
     top: 100px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.experience {
+    position: relative;
+    width: 75%;
+    height: fit-content;
+}
+
+.experience-img {
+    position: relative;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.experience-header {
+    position: relative;
+}
+
+.experience-subheader {
+    position: relative;
+}
+
+.experience-text {
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.experience-year {
+    position: relative;
+}
+
+.experience-path {
+    position: relative;
 }
 
 /* Dropdown Menu */
