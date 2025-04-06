@@ -180,27 +180,33 @@ code {
 
 .experience {
     position: relative;
-    width: 75%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
     height: fit-content;
+    align-items: center;
 }
 
-.experience-img {
+.experience img {
     position: relative;
-    max-width: 300px;
     max-height: 300px;
+    margin-bottom: 10px;
 }
 
-.experience-header {
+.experience h2,
+.experience h3 {
     position: relative;
-}
-
-.experience-subheader {
-    position: relative;
+    margin: 0 0 10px 0;
 }
 
 .experience-text {
     position: relative;
     font-size: 1.2rem;
+}
+
+.experience-text ul {
+    position: relative;
+    margin: 0;
 }
 
 .experience-year {
@@ -209,6 +215,17 @@ code {
 
 .experience-path {
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 500px;
+    width: 100%;
+}
+
+.experience-dash {
+    fill: none;
+    stroke: var(--black);
+    stroke-width: 7.5;
+    stroke-dasharray: 15, 15;
 }
 
 /* Dropdown Menu */
