@@ -84,13 +84,13 @@ code {
 
 .home-text {
     position: absolute;
-    top: 17.5%;
+    display: flex;
+    justify-content: center;
+    top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    width: 55%;
-    height: 20%;
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 4.2rem;
     font-weight: var(--weight);
     letter-spacing: 1.5px;
     text-align: center;
@@ -157,13 +157,21 @@ code {
 
 /* Experiences */
 
+.experience-intro {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
 #experience-container {
     position: absolute;
     display: flex;
     flex-direction: column;
     width: 80%;
     height: fit-content;
-    top: 100px;
+    top: 300px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -278,6 +286,22 @@ code {
 
 .dropdown-content, .dropdown-button, #dropdown-header  {
     display: none;
+}
+
+/* Typewriter */
+
+.cursor {
+    font-weight: bold;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 /* Media Queries */
