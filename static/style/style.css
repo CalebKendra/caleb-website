@@ -260,13 +260,14 @@ code {
     .home-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 45vw);
+        grid-template-rows: repeat(3, 55vw);
         grid-template-areas:
         "bridge hat"
         "catch wind"
         "catch wind";
         top: 400px;
-        width: 70%;
+        width: 85%;
+        height: fit-content;
     }
 
     .home-img {
