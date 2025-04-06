@@ -185,6 +185,8 @@ code {
     width: 50%;
     height: fit-content;
     align-items: center;
+    font-size: 1.5rem;
+    margin: 25px 0 25px 0;
 }
 
 .experience:last-child {
@@ -206,7 +208,7 @@ code {
 
 .experience-text {
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .experience-text ul {
@@ -223,14 +225,16 @@ code {
     left: 50%;
     transform: translateX(-50%);
     height: 500px;
-    width: 100%;
+    width: 50%;
 }
 
 .experience-dash {
+    position: absolute;
+    transform: translateX(25%);
     fill: none;
     stroke: var(--black);
-    stroke-width: 7.5;
-    stroke-dasharray: 15, 15;
+    stroke-width: 3;
+    stroke-dasharray: 5, 5;
 }
 
 /* Dropdown Menu */
