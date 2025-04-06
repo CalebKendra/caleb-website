@@ -184,6 +184,7 @@ code {
     display: flex;
     width: 80%;
     height: fit-content;
+    justify-content: center;
     align-items: center;
     text-align: center;
     margin: 25px 0 25px 0;
@@ -402,6 +403,11 @@ code {
 
     .info-email {
         font-size: 4vw;
+    }
+
+    .experience {
+        align-self: center !important;
+        flex-direction: column;
     }
 }
 
