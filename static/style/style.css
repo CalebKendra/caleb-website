@@ -352,7 +352,7 @@ code {
     }
 }
 
-@media(max-width: 1250px) {
+@media(max-width: 1250px), (min-width: 2000px){
     .home-text {
         top: 150px;
         width: 85%;
