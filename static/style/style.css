@@ -175,7 +175,7 @@ code {
     height: 40px;
     width: 40px;
     top: 1%;
-    left: 50%;
+    right: 5%;
     transform: translateX(-50%);
     z-index: 2;
 }
@@ -249,7 +249,7 @@ code {
     .home-text {
         font-size: 1.8rem;
         top: 150px;
-        width: 80%;
+        width: 85%;
     }
 
     .home-container {
@@ -260,7 +260,7 @@ code {
         "bridge hat"
         "catch wind"
         "catch wind";
-        top: 350px;
+        top: 400px;
         width: 70%;
     }
 
@@ -284,9 +284,9 @@ code {
 
     .info-img {
         height: auto;
-        width: 60%;
+        width: 350px;
         left: 50%;
-        top: 0;
+        top: 3%;
         transform: translateX(-50%);
     }
 
@@ -314,23 +314,29 @@ code {
         height: 65%;
         line-height: 0;
     }
+}
 
+@media(max-width: 400px) {
     .dropdown-button {
-        height: 20px;
+        height: 30px;
     }
 
     .dropdown-bar {
-        height: 2.5px;
+        height: 3px;
     }
 
     .dropdown-x:nth-of-type(1) {
-      transform: rotate(26.565deg) translateY(-50%);
-      width: 44.72136px;
+      transform: rotate(36.87deg) translateY(-50%);
+      width: 50px;
     }
 
     .dropdown-x:nth-of-type(3) {
-      transform: rotate(-26.565deg) translateY(50%);
-      width: 44.72136px;
+      transform: rotate(-36.87deg) translateY(50%);
+      width: 50px;
+    }
+
+    .info-img {
+        width: 80%;
     }
 }
 
