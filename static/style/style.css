@@ -8,6 +8,7 @@
     --black: #171717;
     --white: #FFFFFF;
     --green: #22311D;
+    --grey: #848884;
 }
 
 /* Elements */
@@ -185,7 +186,7 @@ code {
     width: 50%;
     height: fit-content;
     align-items: center;
-    font-size: 1.5rem;
+    text-align: center;
     margin: 25px 0 25px 0;
 }
 
@@ -200,10 +201,18 @@ code {
     margin-bottom: 10px;
 }
 
-.experience h2,
-.experience h3 {
+.experience h2 {
+    position: relative;
+    margin: 0;
+    font-size: 2.7rem;
+}
+
+.experience p {
     position: relative;
     margin: 0 0 10px 0;
+    color: var(--grey);
+    font-size: 1.8rem;
+    font-weight: 350;
 }
 
 .experience-text {
@@ -213,6 +222,7 @@ code {
 
 .experience-text ul {
     position: relative;
+    text-align: left;
     margin: 0;
 }
 
