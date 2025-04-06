@@ -152,17 +152,19 @@ code {
     margin-bottom: 10px;
     color: var(--green);
     text-decoration: none;
-    animation: bobbing 2s ease-in-out infinite;
+    animation: twist 2s ease-in-out infinite;
 }
 
 /* Experiences */
 
 .experience-intro {
     position: absolute;
-    top: 100px;
+    top: 40%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+    width: fit-content;
     text-align: center;
+    font-size: 4.5rem;
 }
 
 #experience-container {
@@ -171,7 +173,7 @@ code {
     flex-direction: column;
     width: 80%;
     height: fit-content;
-    top: 300px;
+    top: 90%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -295,13 +297,14 @@ code {
     animation: blink 0.7s infinite;
 }
 
-@keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
+/* Arrow */
+
+.arrow {
+    position: absolute;
+    transform: translate(-50%,-50%) rotate(90deg);
+    top: 55%;
+    left: 50%;
+    animation: bob-arrow 2s ease-in-out infinite;
 }
 
 /* Media Queries */
@@ -326,7 +329,7 @@ code {
         "bridge hat"
         "catch wind"
         "catch wind";
-        top: 400px;
+        top: 300px;
         width: 85%;
         height: fit-content;
     }
@@ -419,13 +422,31 @@ code {
     cursor: pointer;
 }
 
-/* Animation */
+/* Animations */
 
-@keyframes bobbing {
+@keyframes twist {
     0%, 100% {
         transform: rotate(-2.5deg);
     }
     50% {
         transform: rotate(2.5deg);
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes bob-arrow {
+    0%, 100% {
+        transform: translate(-50%,-50%) rotate(90deg);
+    }
+    50% {
+        transform: translate(-50%,-35%) rotate(90deg);
     }
 }
