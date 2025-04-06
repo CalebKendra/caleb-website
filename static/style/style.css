@@ -199,7 +199,7 @@ code {
 .experience img {
     position: relative;
     max-height: 350px;
-    max-width: 700px;
+    max-width: 80%;
     margin: 10px;
     border-radius: 10px;
 }
@@ -387,7 +387,7 @@ code {
         justify-content: space-evenly !important;
         flex-direction: column;
         width: 95%;
-        top: 55%;
+        top: 400px;
         gap: 0;
     }
 
@@ -410,6 +410,10 @@ code {
     .experience {
         align-self: center !important;
         flex-direction: column;
+    }
+
+    .experience-intro {
+        font-size: 4rem;
     }
 }
 
