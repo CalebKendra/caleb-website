@@ -1,7 +1,6 @@
 const sentences = [
     "Tech Enthusiast",
     "Full-Stack Developer",
-    "div Centerer",
     "50% Goalkeeper",
     "50% Bodybuilder"
 ];
