@@ -233,7 +233,12 @@ code {
     font-size: 1.3rem;
 }
 
-.dropdown-content, .dropdown-button {
+#dropdown-header {
+    width: 50%;
+    font-size: 1.2rem;
+}
+
+.dropdown-content, .dropdown-button, #dropdown-header  {
     display: none;
 }
 
@@ -302,6 +307,10 @@ code {
 @media(max-width: 680px) {
     header {
         display: none;
+    }
+
+    #dropdown-header {
+        display: block;
     }
 
     .dropdown-button {
