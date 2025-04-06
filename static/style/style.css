@@ -159,12 +159,12 @@ code {
 
 .experience-intro {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: fit-content;
+    width: 70%;
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 6rem;
 }
 
 #experience-container {
@@ -173,7 +173,7 @@ code {
     flex-direction: column;
     width: 80%;
     height: fit-content;
-    top: 90%;
+    top: 110%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -187,9 +187,14 @@ code {
     align-items: center;
 }
 
+.experience:last-child {
+    margin-bottom: 120px;
+}
+
 .experience img {
     position: relative;
     max-height: 300px;
+    max-width: 90%;
     margin-bottom: 10px;
 }
 
@@ -319,7 +324,6 @@ code {
 .arrow {
     position: absolute;
     transform: translate(-50%,-50%) rotate(90deg);
-    top: 55%;
     left: 50%;
     animation: bob-arrow 2s ease-in-out infinite;
 }
